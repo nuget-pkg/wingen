@@ -1,0 +1,8 @@
+is_global = true
+build_property.RootNamespace = wingen
+build_property.ProjectDir = C:\home17\+sub\nuget.org\wingen\wingen\.build\wingen.main\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 
+build_property.EnableCodeStyleSeverity = 

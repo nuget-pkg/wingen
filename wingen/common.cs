@@ -1,4 +1,6 @@
+//+#nuget System.Reflection.Metadata;
 //+#nuget CommandLineParser@2.9.1;
+//+#nuget EasyObject;
 //+#inc   CscsUtil.cs
 //+#def   USE_CSCS_UTIL
 //+#def   XYZ
@@ -312,7 +314,7 @@ public static class Program
                     $"\n    <RuntimeIdentifier>{Const._runtime}</RuntimeIdentifier>\n    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>";
         }
 
-        var home = Sys.FindHome(new DirectoryInfo(projDir!));
+        var home = OpenSystem.FindHome(new DirectoryInfo(projDir!));
         Debug(home, "home");
         var asmSpec = "";
         foreach (var t in asmList)
@@ -335,7 +337,7 @@ public static class Program
             {
                 var targetPath = t.Replace("$(HOME)\\", "");
                 targetPath = Path.Combine(projDir!, ".p." + baseName + "+", targetPath);
-                Sys.PrepareForFile(targetPath);
+                OpenSystem.PrepareForFile(targetPath);
                 File.Copy(srcFilePath, targetPath, true);
             }
         }
@@ -370,11 +372,11 @@ public static class Program
                 .Replace("{{USE_FORM}}", outType == "WinExe" ? "\n<UseWindowsForms>true</UseWindowsForms>" : "")
             ;
         Debug(content, "content");
-        Sys.SaveAllText(Path.Combine(projDir!, ".p." + baseName + "+", baseName + ".csproj"), content);
-        Sys.SaveAllText(Path.Combine(projDir!, ".p." + baseName + "+", baseName + ".sln"),
+        OpenSystem.SaveAllText(Path.Combine(projDir!, ".p." + baseName + "+", baseName + ".csproj"), content);
+        OpenSystem.SaveAllText(Path.Combine(projDir!, ".p." + baseName + "+", baseName + ".sln"),
             SlnTemplate.Replace("{{PROGRAM}}", baseName)
         );
-        Sys.SaveAllText(Path.Combine(projDir!, ".p." + baseName + "+", "run"),
+        OpenSystem.SaveAllText(Path.Combine(projDir!, ".p." + baseName + "+", "run"),
             $"""
              #! /usr/bin/env bash.exe
              set -e
@@ -407,7 +409,7 @@ public static class Program
         var icoList = parser.IcoList;
         //if (!pkgList.Contains("System.Text.Encoding.CodePages")) pkgList.Add("System.Text.Encoding.CodePages");
         var projDir = Path.GetDirectoryName(projFileName);
-        var home = Sys.FindHome(new DirectoryInfo(projDir!));
+        var home = OpenSystem.FindHome(new DirectoryInfo(projDir!));
         Debug(home, "home");
         var baseName = Path.GetFileNameWithoutExtension(projFileName);
         Directory.SetCurrentDirectory(projDir!);
@@ -456,7 +458,7 @@ public static class Program
                 fileBasedCode = fileBasedCode.Replace("\n", "\n");
             }
 
-            Sys.SaveAllText($".s.{rootNs}", fileBasedCode);
+            OpenSystem.SaveAllText($".s.{rootNs}", fileBasedCode);
         }
 
         if (singleOnly) return;
@@ -532,8 +534,8 @@ public static class Program
                 .Replace("{{ICO_SPEC}}", icoSpec)
             ;
         //Echo(content, "content");
-        Sys.SaveAllText(".build/" + baseName + "\\" + baseName + ".csproj", content);
-        Sys.SaveAllText(".build/" + baseName + "\\" + baseName + ".sln",
+        OpenSystem.SaveAllText(".build/" + baseName + "\\" + baseName + ".csproj", content);
+        OpenSystem.SaveAllText(".build/" + baseName + "\\" + baseName + ".sln",
             SlnTemplate.Replace("{{PROGRAM}}", baseName)
         );
         var cleanStep = CleanShTemplate
@@ -557,7 +559,7 @@ public static class Program
                 .Replace("{{EXT}}", generateDllProject ? "dll" : "exe")
             ;
         var runFilePath = Path.GetFullPath(".r." + rootNs + ".sh");
-        Sys.SaveAllText(runFilePath,
+        OpenSystem.SaveAllText(runFilePath,
             RunShTemplate
                 .Replace("{{GENERATOR}}", generator)
                 .Replace("{{PROGRAM}}", baseName)
@@ -571,7 +573,7 @@ public static class Program
         //string scriptFilePath = $"do.{rootNs}";
         //string scriptFilePath = $"{rootNs}.do";
         var scriptFilePath = $"{rootNs}.task";
-        Sys.SaveAllText(scriptFilePath,
+        OpenSystem.SaveAllText(scriptFilePath,
                 $$$"""
                        #! /usr/bin/env bash.exe
                        # -*- mode: sh -*-
@@ -608,7 +610,7 @@ public static class Program
             )
             ;
         var cmdFilePath = $"do.{rootNs}.cmd";
-        Sys.SaveAllText(cmdFilePath,
+        OpenSystem.SaveAllText(cmdFilePath,
                 $$$"""
                        @echo off
                        set script_dir=%~dp0
