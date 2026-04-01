@@ -1,0 +1,712 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.6.2": {
+      "CommonJsonInterface/2026.318.115.18": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.Core",
+          "System.Data",
+          "System.Data.DataSetExtensions",
+          "System.IO.Compression",
+          "System.Linq",
+          "System.Net.Http",
+          "System.Web",
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "lib/net462/CommonJsonInterface.dll": {}
+        },
+        "runtime": {
+          "lib/net462/CommonJsonInterface.dll": {}
+        }
+      },
+      "EasyObject/2026.327.130": {
+        "type": "package",
+        "dependencies": {
+          "JsoncParser": "2026.318.150.53",
+          "PlainObjectConverter": "2026.325.1801.12",
+          "PlainObjectInterface": "2026.122.1836.32",
+          "Spectre.Console.Json": "0.54.0",
+          "System.Text.Encoding.CodePages": "10.0.5",
+          "UniversalEncoding": "2026.327.57.46"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.Core",
+          "System.Data",
+          "System.Data.DataSetExtensions",
+          "System.Web",
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "lib/net462/EasyObject.dll": {}
+        },
+        "runtime": {
+          "lib/net462/EasyObject.dll": {}
+        }
+      },
+      "Global.Sys/2026.327.210.43": {
+        "type": "package",
+        "dependencies": {
+          "EasyObject": "2026.327.130",
+          "LiteDB": "5.0.21"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.Core",
+          "System.Data",
+          "System.Data.DataSetExtensions",
+          "System.Web",
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "lib/net462/Global.Sys.dll": {}
+        },
+        "runtime": {
+          "lib/net462/Global.Sys.dll": {}
+        }
+      },
+      "JsoncParser/2026.318.150.53": {
+        "type": "package",
+        "dependencies": {
+          "CommonJsonInterface": "2026.318.115.18"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.Core",
+          "System.Data",
+          "System.Data.DataSetExtensions",
+          "System.IO.Compression",
+          "System.Linq",
+          "System.Net.Http",
+          "System.Web",
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "lib/net462/JsoncParser.dll": {}
+        },
+        "runtime": {
+          "lib/net462/JsoncParser.dll": {}
+        }
+      },
+      "LiteDB/5.0.21": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1"
+        },
+        "compile": {
+          "lib/net45/LiteDB.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/LiteDB.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "PlainObjectConverter/2026.325.1801.12": {
+        "type": "package",
+        "dependencies": {
+          "CommonJsonInterface": "2026.122.1008.12",
+          "PlainObjectInterface": "2026.122.1836.32"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.Core",
+          "System.Data",
+          "System.Data.DataSetExtensions",
+          "System.IO.Compression",
+          "System.Linq",
+          "System.Net.Http",
+          "System.Web",
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "lib/net462/PlainObjectConverter.dll": {}
+        },
+        "runtime": {
+          "lib/net462/PlainObjectConverter.dll": {}
+        }
+      },
+      "PlainObjectInterface/2026.122.1836.32": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.Core",
+          "System.Data",
+          "System.Data.DataSetExtensions",
+          "System.IO.Compression",
+          "System.Linq",
+          "System.Net.Http",
+          "System.Web",
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "lib/net462/PlainObjectInterface.dll": {}
+        },
+        "runtime": {
+          "lib/net462/PlainObjectInterface.dll": {}
+        }
+      },
+      "Spectre.Console/0.54.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.6.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/Spectre.Console.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Spectre.Console.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Spectre.Console.Json/0.54.0": {
+        "type": "package",
+        "dependencies": {
+          "Spectre.Console": "0.54.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Spectre.Console.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Spectre.Console.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Buffers/4.6.1": {
+        "type": "package",
+        "compile": {
+          "lib/net462/System.Buffers.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Buffers.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Memory/4.6.3": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.6.1",
+          "System.Numerics.Vectors": "4.6.1",
+          "System.Runtime.CompilerServices.Unsafe": "6.1.2"
+        },
+        "compile": {
+          "lib/net462/System.Memory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Memory.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Numerics.Vectors/4.6.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics"
+        ],
+        "compile": {
+          "lib/net462/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/6.1.2": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net462/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Text.Encoding.CodePages/10.0.5": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.6.3",
+          "System.Runtime.CompilerServices.Unsafe": "6.1.2",
+          "System.ValueTuple": "4.6.1"
+        },
+        "compile": {
+          "lib/net462/System.Text.Encoding.CodePages.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Text.Encoding.CodePages.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.ValueTuple/4.6.1": {
+        "type": "package",
+        "compile": {
+          "lib/net462/System.ValueTuple.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.ValueTuple.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "UniversalEncoding/2026.327.57.46": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.Core",
+          "System.Data",
+          "System.Data.DataSetExtensions",
+          "System.IO.Compression",
+          "System.Linq",
+          "System.Net.Http",
+          "System.Web",
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "lib/net462/UniversalEncoding.dll": {}
+        },
+        "runtime": {
+          "lib/net462/UniversalEncoding.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CommonJsonInterface/2026.318.115.18": {
+      "sha512": "sZVr310xtcv2ysIGl22SMWq7Iw+wrCVD0dSx27k4H4rO9L/Jbm43UGhQGOBA2gxl6+m1/yjiTexqF/SrHszaJQ==",
+      "type": "package",
+      "path": "commonjsoninterface/2026.318.115.18",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "commonjsoninterface.2026.318.115.18.nupkg.sha512",
+        "commonjsoninterface.nuspec",
+        "lib/net462/CommonJsonInterface.dll",
+        "lib/net8.0/CommonJsonInterface.dll",
+        "lib/netstandard2.0/CommonJsonInterface.dll"
+      ]
+    },
+    "EasyObject/2026.327.130": {
+      "sha512": "GUXy8BxZGdHzOWisoMeGecTgWy0LoZc8v5yECnwYf2Al7wYdIMXx2Kimr8+A2mmWYq55FSXkkLXAo5TLh5q3qg==",
+      "type": "package",
+      "path": "easyobject/2026.327.130",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "easyobject.2026.327.130.nupkg.sha512",
+        "easyobject.nuspec",
+        "lib/net462/EasyObject.dll",
+        "lib/net8.0/EasyObject.dll"
+      ]
+    },
+    "Global.Sys/2026.327.210.43": {
+      "sha512": "2IauCaYyravbW0n7pPuW04W5Ghe0RzEWRHGbRZeOCRow8NWG/CQd3lCzW/q2XuLSOek7cGbbK2HPJcx9UkDXeA==",
+      "type": "package",
+      "path": "global.sys/2026.327.210.43",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "global.sys.2026.327.210.43.nupkg.sha512",
+        "global.sys.nuspec",
+        "lib/net462/Global.Sys.dll",
+        "lib/net8.0/Global.Sys.dll"
+      ]
+    },
+    "JsoncParser/2026.318.150.53": {
+      "sha512": "ShoRRy3uClcGzBmGBEVWag1Kp4Shtc1ZCi6SrlRNMTswBQ34MT+bbniJl1PjSmFVRqn5Ze/Fo+kSox8PCxx5Cw==",
+      "type": "package",
+      "path": "jsoncparser/2026.318.150.53",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "jsoncparser.2026.318.150.53.nupkg.sha512",
+        "jsoncparser.nuspec",
+        "lib/net462/JsoncParser.dll",
+        "lib/net8.0/JsoncParser.dll",
+        "lib/netstandard2.0/JsoncParser.dll"
+      ]
+    },
+    "LiteDB/5.0.21": {
+      "sha512": "ykJ7ffFl7P9YQKR/PLci6zupiLrsSCNkOTiw6OtzntH7d2kCYp5L1+3a/pksKgTEHcJBoPXFtg7VZSGVBseN9w==",
+      "type": "package",
+      "path": "litedb/5.0.21",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "AppVeyorSettings.json",
+        "LICENSE",
+        "icon_64x64.png",
+        "lib/net45/LiteDB.dll",
+        "lib/net45/LiteDB.xml",
+        "lib/netstandard1.3/LiteDB.dll",
+        "lib/netstandard1.3/LiteDB.xml",
+        "lib/netstandard2.0/LiteDB.dll",
+        "lib/netstandard2.0/LiteDB.xml",
+        "litedb.5.0.21.nupkg.sha512",
+        "litedb.nuspec"
+      ]
+    },
+    "PlainObjectConverter/2026.325.1801.12": {
+      "sha512": "cI2iDVbvUs5UP7zQZVGxMuAkSWczfpy2KcVIKDBmOtsXojsdeXPPjOEB+ywLx8i6F+tcfLX1i7oSBE18vFvtbw==",
+      "type": "package",
+      "path": "plainobjectconverter/2026.325.1801.12",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net462/PlainObjectConverter.dll",
+        "lib/net8.0/PlainObjectConverter.dll",
+        "lib/netstandard2.0/PlainObjectConverter.dll",
+        "plainobjectconverter.2026.325.1801.12.nupkg.sha512",
+        "plainobjectconverter.nuspec"
+      ]
+    },
+    "PlainObjectInterface/2026.122.1836.32": {
+      "sha512": "ScH5tMnkk81Z6EEkF4cMhVgTJkrxN8kq1/4CUruj9i98J4nL0gv+0JercXGvDsIuQtVRNLdSp/kut9M1qU7R4w==",
+      "type": "package",
+      "path": "plainobjectinterface/2026.122.1836.32",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net462/PlainObjectInterface.dll",
+        "lib/net8.0/PlainObjectInterface.dll",
+        "lib/netstandard2.0/PlainObjectInterface.dll",
+        "plainobjectinterface.2026.122.1836.32.nupkg.sha512",
+        "plainobjectinterface.nuspec"
+      ]
+    },
+    "Spectre.Console/0.54.0": {
+      "sha512": "StDXCFayfy0yB1xzUHT2tgEpV1/HFTiS4JgsAQS49EYTfMixSwwucaQs/bIOCwXjWwIQTMuxjUIxcB5XsJkFJA==",
+      "type": "package",
+      "path": "spectre.console/0.54.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net10.0/Spectre.Console.dll",
+        "lib/net10.0/Spectre.Console.xml",
+        "lib/net8.0/Spectre.Console.dll",
+        "lib/net8.0/Spectre.Console.xml",
+        "lib/net9.0/Spectre.Console.dll",
+        "lib/net9.0/Spectre.Console.xml",
+        "lib/netstandard2.0/Spectre.Console.dll",
+        "lib/netstandard2.0/Spectre.Console.xml",
+        "logo.png",
+        "spectre.console.0.54.0.nupkg.sha512",
+        "spectre.console.nuspec"
+      ]
+    },
+    "Spectre.Console.Json/0.54.0": {
+      "sha512": "ulIDhznzFiG848XQvno15pIVzunr/OjSPaGCfrXw00oR8OdNWJPW9y5uglhVqjmcDDTsaGtfJgyuYBLK5H8TFw==",
+      "type": "package",
+      "path": "spectre.console.json/0.54.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net10.0/Spectre.Console.Json.dll",
+        "lib/net10.0/Spectre.Console.Json.xml",
+        "lib/net8.0/Spectre.Console.Json.dll",
+        "lib/net8.0/Spectre.Console.Json.xml",
+        "lib/net9.0/Spectre.Console.Json.dll",
+        "lib/net9.0/Spectre.Console.Json.xml",
+        "lib/netstandard2.0/Spectre.Console.Json.dll",
+        "lib/netstandard2.0/Spectre.Console.Json.xml",
+        "logo.png",
+        "spectre.console.json.0.54.0.nupkg.sha512",
+        "spectre.console.json.nuspec"
+      ]
+    },
+    "System.Buffers/4.6.1": {
+      "sha512": "N8GXpmiLMtljq7gwvyS+1QvKT/W2J8sNAvx+HVg4NGmsG/H+2k/y9QI23auLJRterrzCiDH+IWAw4V/GPwsMlw==",
+      "type": "package",
+      "path": "system.buffers/4.6.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "buildTransitive/net461/System.Buffers.targets",
+        "buildTransitive/net462/_._",
+        "lib/net462/System.Buffers.dll",
+        "lib/net462/System.Buffers.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard2.0/System.Buffers.dll",
+        "lib/netstandard2.0/System.Buffers.xml",
+        "lib/netstandard2.1/_._",
+        "system.buffers.4.6.1.nupkg.sha512",
+        "system.buffers.nuspec"
+      ]
+    },
+    "System.Memory/4.6.3": {
+      "sha512": "qdcDOgnFZY40+Q9876JUHnlHu7bosOHX8XISRoH94fwk6hgaeQGSgfZd8srWRZNt5bV9ZW2TljcegDNxsf+96A==",
+      "type": "package",
+      "path": "system.memory/4.6.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "buildTransitive/net461/System.Memory.targets",
+        "buildTransitive/net462/_._",
+        "lib/net462/System.Memory.dll",
+        "lib/net462/System.Memory.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "lib/netstandard2.1/_._",
+        "system.memory.4.6.3.nupkg.sha512",
+        "system.memory.nuspec"
+      ]
+    },
+    "System.Numerics.Vectors/4.6.1": {
+      "sha512": "sQxefTnhagrhoq2ReR0D/6K0zJcr9Hrd6kikeXsA1I8kOCboTavcUC4r7TSfpKFeE163uMuxZcyfO1mGO3EN8Q==",
+      "type": "package",
+      "path": "system.numerics.vectors/4.6.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "buildTransitive/net461/System.Numerics.Vectors.targets",
+        "buildTransitive/net462/_._",
+        "lib/net462/System.Numerics.Vectors.dll",
+        "lib/net462/System.Numerics.Vectors.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard2.0/System.Numerics.Vectors.dll",
+        "lib/netstandard2.0/System.Numerics.Vectors.xml",
+        "lib/netstandard2.1/_._",
+        "system.numerics.vectors.4.6.1.nupkg.sha512",
+        "system.numerics.vectors.nuspec"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/6.1.2": {
+      "sha512": "2hBr6zdbIBTDE3EhK7NSVNdX58uTK6iHW/P/Axmm9sl1xoGSLqDvMtpecn226TNwHByFokYwJmt/aQQNlO5CRw==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/6.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "buildTransitive/net461/System.Runtime.CompilerServices.Unsafe.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.targets",
+        "lib/net462/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net462/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net6.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/net7.0/_._",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.6.1.2.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec"
+      ]
+    },
+    "System.Text.Encoding.CodePages/10.0.5": {
+      "sha512": "XjJQDlI3ZcuhiVS5PELE+baWk4BWjxXWcojj4H7y+moVKcAxj8jgra6JQvGOKoWpA/TPDqULxTxwM/ZolErl+w==",
+      "type": "package",
+      "path": "system.text.encoding.codepages/10.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Text.Encoding.CodePages.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Text.Encoding.CodePages.targets",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net10.0/System.Text.Encoding.CodePages.dll",
+        "lib/net10.0/System.Text.Encoding.CodePages.xml",
+        "lib/net462/System.Text.Encoding.CodePages.dll",
+        "lib/net462/System.Text.Encoding.CodePages.xml",
+        "lib/net8.0/System.Text.Encoding.CodePages.dll",
+        "lib/net8.0/System.Text.Encoding.CodePages.xml",
+        "lib/net9.0/System.Text.Encoding.CodePages.dll",
+        "lib/net9.0/System.Text.Encoding.CodePages.xml",
+        "lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
+        "lib/netstandard2.0/System.Text.Encoding.CodePages.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "runtimes/win/lib/net10.0/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/net10.0/System.Text.Encoding.CodePages.xml",
+        "runtimes/win/lib/net8.0/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/net8.0/System.Text.Encoding.CodePages.xml",
+        "runtimes/win/lib/net9.0/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/net9.0/System.Text.Encoding.CodePages.xml",
+        "system.text.encoding.codepages.10.0.5.nupkg.sha512",
+        "system.text.encoding.codepages.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.ValueTuple/4.6.1": {
+      "sha512": "+RJT4qaekpZ7DDLhf+LTjq+E48jieKiY9ulJ+BoxKmZblIJfIJT8Ufcaa/clQqnYvWs8jugfGSMu8ylS0caG0w==",
+      "type": "package",
+      "path": "system.valuetuple/4.6.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "build/net471/System.ValueTuple.targets",
+        "buildTransitive/net461/System.ValueTuple.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net471/System.ValueTuple.targets",
+        "lib/net462/System.ValueTuple.dll",
+        "lib/net462/System.ValueTuple.xml",
+        "lib/net47/System.ValueTuple.dll",
+        "lib/net47/System.ValueTuple.xml",
+        "lib/net471/_._",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard2.0/_._",
+        "system.valuetuple.4.6.1.nupkg.sha512",
+        "system.valuetuple.nuspec"
+      ]
+    },
+    "UniversalEncoding/2026.327.57.46": {
+      "sha512": "lsprxJR09PQ0fYWyNPY6DJtutBwPafUQeSAwJ96zqhLIOAoiQ8cUtDJAx/GWtAkVs8MpTIJRIdhrsASUFSD5Gw==",
+      "type": "package",
+      "path": "universalencoding/2026.327.57.46",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net462/UniversalEncoding.dll",
+        "lib/net8.0/UniversalEncoding.dll",
+        "lib/netstandard2.0/UniversalEncoding.dll",
+        "universalencoding.2026.327.57.46.nupkg.sha512",
+        "universalencoding.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.6.2": [
+      "Global.Sys >= *",
+      "System.Text.Encoding.CodePages >= *"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\user\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "0.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\env\\+util\\dnmerge\\.build\\dnmerge.main\\dnmerge.main.csproj",
+      "projectName": "dnmerge",
+      "projectPath": "C:\\env\\+util\\dnmerge\\.build\\dnmerge.main\\dnmerge.main.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\env\\+util\\dnmerge\\.build\\dnmerge.main\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net462"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net462": {
+          "targetAlias": "net462",
+          "projectReferences": {}
+        }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "10.0.200"
+    },
+    "frameworks": {
+      "net462": {
+        "targetAlias": "net462",
+        "dependencies": {
+          "Global.Sys": {
+            "target": "Package",
+            "version": "[*, )"
+          },
+          "System.Text.Encoding.CodePages": {
+            "target": "Package",
+            "version": "[*, )"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

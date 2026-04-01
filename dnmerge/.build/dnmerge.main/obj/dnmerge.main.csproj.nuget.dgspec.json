@@ -1,0 +1,58 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\env\\+util\\dnmerge\\.build\\dnmerge.main\\dnmerge.main.csproj": {}
+  },
+  "projects": {
+    "C:\\env\\+util\\dnmerge\\.build\\dnmerge.main\\dnmerge.main.csproj": {
+      "version": "0.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\env\\+util\\dnmerge\\.build\\dnmerge.main\\dnmerge.main.csproj",
+        "projectName": "dnmerge",
+        "projectPath": "C:\\env\\+util\\dnmerge\\.build\\dnmerge.main\\dnmerge.main.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\env\\+util\\dnmerge\\.build\\dnmerge.main\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net462"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {}
+          }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net462": {
+          "targetAlias": "net462",
+          "dependencies": {
+            "Global.Sys": {
+              "target": "Package",
+              "version": "[*, )"
+            },
+            "System.Text.Encoding.CodePages": {
+              "target": "Package",
+              "version": "[*, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

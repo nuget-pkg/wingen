@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "ODnT3E41UsM=",
+  "success": true,
+  "projectFilePath": "C:\\env\\+util\\dnmerge\\.build\\dnmerge.main\\dnmerge.main.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\commonjsoninterface\\2026.318.115.18\\commonjsoninterface.2026.318.115.18.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\easyobject\\2026.327.130\\easyobject.2026.327.130.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\global.sys\\2026.327.210.43\\global.sys.2026.327.210.43.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\jsoncparser\\2026.318.150.53\\jsoncparser.2026.318.150.53.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\litedb\\5.0.21\\litedb.5.0.21.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\plainobjectconverter\\2026.325.1801.12\\plainobjectconverter.2026.325.1801.12.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\plainobjectinterface\\2026.122.1836.32\\plainobjectinterface.2026.122.1836.32.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\spectre.console\\0.54.0\\spectre.console.0.54.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\spectre.console.json\\0.54.0\\spectre.console.json.0.54.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\system.buffers\\4.6.1\\system.buffers.4.6.1.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\system.memory\\4.6.3\\system.memory.4.6.3.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\system.numerics.vectors\\4.6.1\\system.numerics.vectors.4.6.1.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.1.2\\system.runtime.compilerservices.unsafe.6.1.2.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\system.text.encoding.codepages\\10.0.5\\system.text.encoding.codepages.10.0.5.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\system.valuetuple\\4.6.1\\system.valuetuple.4.6.1.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\universalencoding\\2026.327.57.46\\universalencoding.2026.327.57.46.nupkg.sha512"
+  ],
+  "logs": []
+}
