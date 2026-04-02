@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("unigen")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("0.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.0.0.0+f07978f6a8243869be74ac50da9ff6c7af1a6d9e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.0.0.0+62a6b0127e0f41a46f614aa052d2be07df9c297d")]
 [assembly: System.Reflection.AssemblyProductAttribute("unigen")]
 [assembly: System.Reflection.AssemblyTitleAttribute("unigen")]
 [assembly: System.Reflection.AssemblyVersionAttribute("0.0.0.0")]

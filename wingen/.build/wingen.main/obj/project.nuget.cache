@@ -6,16 +6,15 @@
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\commandlineparser\\2.9.1\\commandlineparser.2.9.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\commonjsoninterface\\2026.401.46.46\\commonjsoninterface.2026.401.46.46.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\coreobject\\2026.401.400.31\\coreobject.2026.401.400.31.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\coreobject\\2026.401.2240.41\\coreobject.2026.401.2240.41.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\coreparser\\2026.401.333.3\\coreparser.2026.401.333.3.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\easyobject\\2026.401.1036.45\\easyobject.2026.401.1036.45.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\easyobject\\2026.403.332.39\\easyobject.2026.403.332.39.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\hyperoperatingsystem\\2026.403.49.34\\hyperoperatingsystem.2026.403.49.34.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\newtonsoft.json\\13.0.4\\newtonsoft.json.13.0.4.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\nunit\\4.5.1\\nunit.4.5.1.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\opensystem\\2026.401.907.49\\opensystem.2026.401.907.49.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\plainobjectconverter\\2026.401.418.33\\plainobjectconverter.2026.401.418.33.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\plainobjectconverter\\2026.402.700\\plainobjectconverter.2026.402.700.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\plainobjectinterface\\2026.122.1836.32\\plainobjectinterface.2026.122.1836.32.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\spectre.console\\0.54.0\\spectre.console.0.54.0.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\spectre.console.json\\0.54.0\\spectre.console.json.0.54.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.buffers\\4.6.1\\system.buffers.4.6.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.collections.immutable\\10.0.5\\system.collections.immutable.10.0.5.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.memory\\4.6.3\\system.memory.4.6.3.nupkg.sha512",
@@ -25,7 +24,7 @@
     "C:\\Users\\user\\.nuget\\packages\\system.text.encoding.codepages\\10.0.5\\system.text.encoding.codepages.10.0.5.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.valuetuple\\4.6.1\\system.valuetuple.4.6.1.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\universalencoding\\2026.329.520.34\\universalencoding.2026.329.520.34.nupkg.sha512"
+    "C:\\Users\\user\\.nuget\\packages\\universal\\2026.403.34.42\\universal.2026.403.34.42.nupkg.sha512"
   ],
   "logs": []
 }

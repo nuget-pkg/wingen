@@ -37,7 +37,7 @@
           "lib/net462/CommonJsonInterface.dll": {}
         }
       },
-      "CoreObject/2026.401.400.31": {
+      "CoreObject/2026.401.2240.41": {
         "type": "package",
         "dependencies": {
           "CoreParser": "2026.401.333.3",
@@ -88,14 +88,14 @@
           "lib/net462/CoreParser.dll": {}
         }
       },
-      "EasyObject/2026.401.1036.45": {
+      "EasyObject/2026.403.332.39": {
         "type": "package",
         "dependencies": {
+          "HyperOperatingSystem": "2026.403.49.34",
           "NUnit": "4.5.1",
-          "OpenSystem": "2026.401.907.49",
-          "PlainObjectConverter": "2026.401.418.33",
+          "PlainObjectConverter": "2026.402.700",
           "PlainObjectInterface": "2026.122.1836.32",
-          "Spectre.Console.Json": "0.54.0"
+          "Spectre.Console": "0.54.0"
         },
         "frameworkAssemblies": [
           "Microsoft.CSharp",
@@ -112,6 +112,33 @@
         },
         "runtime": {
           "lib/net462/EasyObject.dll": {}
+        }
+      },
+      "HyperOperatingSystem/2026.403.49.34": {
+        "type": "package",
+        "dependencies": {
+          "CoreObject": "2026.401.2240.41",
+          "System.Text.Encoding.CodePages": "10.0.5",
+          "Universal": "2026.403.34.42"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.Core",
+          "System.Data",
+          "System.Data.DataSetExtensions",
+          "System.IO.Compression",
+          "System.Linq",
+          "System.Net.Http",
+          "System.Web",
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "lib/net462/HyperOperatingSystem.dll": {}
+        },
+        "runtime": {
+          "lib/net462/HyperOperatingSystem.dll": {}
         }
       },
       "Newtonsoft.Json/13.0.4": {
@@ -153,36 +180,10 @@
           "build/_._": {}
         }
       },
-      "OpenSystem/2026.401.907.49": {
+      "PlainObjectConverter/2026.402.700": {
         "type": "package",
         "dependencies": {
-          "System.Text.Encoding.CodePages": "10.0.5",
-          "UniversalEncoding": "2026.329.520.34"
-        },
-        "frameworkAssemblies": [
-          "Microsoft.CSharp",
-          "System",
-          "System.Core",
-          "System.Data",
-          "System.Data.DataSetExtensions",
-          "System.IO.Compression",
-          "System.Linq",
-          "System.Net.Http",
-          "System.Web",
-          "System.Xml",
-          "System.Xml.Linq"
-        ],
-        "compile": {
-          "lib/net462/OpenSystem.dll": {}
-        },
-        "runtime": {
-          "lib/net462/OpenSystem.dll": {}
-        }
-      },
-      "PlainObjectConverter/2026.401.418.33": {
-        "type": "package",
-        "dependencies": {
-          "CoreObject": "2026.401.400.31",
+          "CoreObject": "2026.401.2240.41",
           "Newtonsoft.Json": "13.0.4",
           "PlainObjectInterface": "2026.122.1836.32"
         },
@@ -240,22 +241,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Spectre.Console.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Spectre.Console.Json/0.54.0": {
-        "type": "package",
-        "dependencies": {
-          "Spectre.Console": "0.54.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Spectre.Console.Json.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/Spectre.Console.Json.dll": {
             "related": ".xml"
           }
         }
@@ -430,8 +415,11 @@
           "buildTransitive/net462/_._": {}
         }
       },
-      "UniversalEncoding/2026.329.520.34": {
+      "Universal/2026.403.34.42": {
         "type": "package",
+        "dependencies": {
+          "CoreObject": "2026.401.2240.41"
+        },
         "frameworkAssemblies": [
           "Microsoft.CSharp",
           "System",
@@ -446,10 +434,10 @@
           "System.Xml.Linq"
         ],
         "compile": {
-          "lib/net462/UniversalEncoding.dll": {}
+          "lib/net462/Universal.dll": {}
         },
         "runtime": {
-          "lib/net462/UniversalEncoding.dll": {}
+          "lib/net462/Universal.dll": {}
         }
       }
     }
@@ -492,15 +480,15 @@
         "lib/netstandard2.0/CommonJsonInterface.dll"
       ]
     },
-    "CoreObject/2026.401.400.31": {
-      "sha512": "8ygJNCIOyj/f4I2LmnDiYPIGIYJiQ57mVZusZW8dszMkO0eaqKtr+4ljrHhXsi8cyGoXBsO2eC7+jf5Gdwpjig==",
+    "CoreObject/2026.401.2240.41": {
+      "sha512": "wollIGfACgctpLcZM5Z3IlV4ASIB4RbMEFkqcFwHc+XzZQLkaiEC1icBRUvpC2df+Q7wur79qc9jrKqUDbfJCw==",
       "type": "package",
-      "path": "coreobject/2026.401.400.31",
+      "path": "coreobject/2026.401.2240.41",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
-        "coreobject.2026.401.400.31.nupkg.sha512",
+        "coreobject.2026.401.2240.41.nupkg.sha512",
         "coreobject.nuspec",
         "lib/net462/CoreObject.dll",
         "lib/net8.0/CoreObject.dll",
@@ -522,18 +510,32 @@
         "lib/netstandard2.0/CoreParser.dll"
       ]
     },
-    "EasyObject/2026.401.1036.45": {
-      "sha512": "1u4jqjKovVAxbpODwgcUbp8lhSNpOzjQA0H/Qbzn0jeTuYH1sw/Ghwo5u9ccrGIbhSiY8GxyaYFnwThMZJEhDg==",
+    "EasyObject/2026.403.332.39": {
+      "sha512": "Tv73nihBdZe1lKoITPX6jydtxe/RbDV7OjrWyp/yVs+xsw6Prc59tZGb+DMElvC0jvuvv7XReuruCYFSpB+WmA==",
       "type": "package",
-      "path": "easyobject/2026.401.1036.45",
+      "path": "easyobject/2026.403.332.39",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
-        "easyobject.2026.401.1036.45.nupkg.sha512",
+        "easyobject.2026.403.332.39.nupkg.sha512",
         "easyobject.nuspec",
         "lib/net462/EasyObject.dll",
         "lib/net8.0/EasyObject.dll"
+      ]
+    },
+    "HyperOperatingSystem/2026.403.49.34": {
+      "sha512": "lzIt+GIOEvs1q7v/Z+unwyEDU1kyIvPVJMQ2fj8tdah/Q4bNpCBxF0ElP0QG+lf5prbK6DR+y7aYdR2E8qsIiA==",
+      "type": "package",
+      "path": "hyperoperatingsystem/2026.403.49.34",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "hyperoperatingsystem.2026.403.49.34.nupkg.sha512",
+        "hyperoperatingsystem.nuspec",
+        "lib/net462/HyperOperatingSystem.dll",
+        "lib/net8.0/HyperOperatingSystem.dll"
       ]
     },
     "Newtonsoft.Json/13.0.4": {
@@ -595,24 +597,10 @@
         "nunit.nuspec"
       ]
     },
-    "OpenSystem/2026.401.907.49": {
-      "sha512": "i9skkR827ST/DYjk3gYnAoqVzC7fwjC9srFI+3M9yiatzFX7m/F8TrrpZoNKKyEBP6aa6LFFL1HCTFuo498oGQ==",
+    "PlainObjectConverter/2026.402.700": {
+      "sha512": "oy9s2o/Nz9GQptTssX4vA7sv56cpw/q0U90o/+8pdAHqPCRbNvhH/4srZ/rCSlvhoSQUoy44QCAXVCiJO/sDcw==",
       "type": "package",
-      "path": "opensystem/2026.401.907.49",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "lib/net462/OpenSystem.dll",
-        "lib/net8.0/OpenSystem.dll",
-        "opensystem.2026.401.907.49.nupkg.sha512",
-        "opensystem.nuspec"
-      ]
-    },
-    "PlainObjectConverter/2026.401.418.33": {
-      "sha512": "YUL8NioIboJWOShsSvwHhgf2kKeaIDI44GSaF1QH9xND5SZu4wg2cuHMIm4VqUHfrrK+dBryQUq5XNgZrxL+VQ==",
-      "type": "package",
-      "path": "plainobjectconverter/2026.401.418.33",
+      "path": "plainobjectconverter/2026.402.700",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -620,7 +608,7 @@
         "lib/net462/PlainObjectConverter.dll",
         "lib/net8.0/PlainObjectConverter.dll",
         "lib/netstandard2.0/PlainObjectConverter.dll",
-        "plainobjectconverter.2026.401.418.33.nupkg.sha512",
+        "plainobjectconverter.2026.402.700.nupkg.sha512",
         "plainobjectconverter.nuspec"
       ]
     },
@@ -658,27 +646,6 @@
         "logo.png",
         "spectre.console.0.54.0.nupkg.sha512",
         "spectre.console.nuspec"
-      ]
-    },
-    "Spectre.Console.Json/0.54.0": {
-      "sha512": "ulIDhznzFiG848XQvno15pIVzunr/OjSPaGCfrXw00oR8OdNWJPW9y5uglhVqjmcDDTsaGtfJgyuYBLK5H8TFw==",
-      "type": "package",
-      "path": "spectre.console.json/0.54.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "lib/net10.0/Spectre.Console.Json.dll",
-        "lib/net10.0/Spectre.Console.Json.xml",
-        "lib/net8.0/Spectre.Console.Json.dll",
-        "lib/net8.0/Spectre.Console.Json.xml",
-        "lib/net9.0/Spectre.Console.Json.dll",
-        "lib/net9.0/Spectre.Console.Json.xml",
-        "lib/netstandard2.0/Spectre.Console.Json.dll",
-        "lib/netstandard2.0/Spectre.Console.Json.xml",
-        "logo.png",
-        "spectre.console.json.0.54.0.nupkg.sha512",
-        "spectre.console.json.nuspec"
       ]
     },
     "System.Buffers/4.6.1": {
@@ -928,19 +895,19 @@
         "system.valuetuple.nuspec"
       ]
     },
-    "UniversalEncoding/2026.329.520.34": {
-      "sha512": "2W+y5gti3ZixTZhp7WmMZFstCsXUjfh/1mxAe4pEuhyud6KMfWVISMcy8tofrub7YIsVYnRLbrueiuT5qzF9Rg==",
+    "Universal/2026.403.34.42": {
+      "sha512": "QE24vKPH9Kl6WGFicDCWmdiQHEoC2V6DD+IFgmNUpAc9JSZxb6Xf5PSauO5eokmLgvxn6osehquaCa5a6Y6mdQ==",
       "type": "package",
-      "path": "universalencoding/2026.329.520.34",
+      "path": "universal/2026.403.34.42",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
-        "lib/net462/UniversalEncoding.dll",
-        "lib/net8.0/UniversalEncoding.dll",
-        "lib/netstandard2.0/UniversalEncoding.dll",
-        "universalencoding.2026.329.520.34.nupkg.sha512",
-        "universalencoding.nuspec"
+        "lib/net462/Universal.dll",
+        "lib/net8.0/Universal.dll",
+        "lib/netstandard2.0/Universal.dll",
+        "universal.2026.403.34.42.nupkg.sha512",
+        "universal.nuspec"
       ]
     }
   },

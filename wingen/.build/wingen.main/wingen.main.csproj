@@ -18,6 +18,9 @@
     <DebugType>full</DebugType>
     <TieredCompilationQuickJit>false</TieredCompilationQuickJit>
   </PropertyGroup>
+  <PropertyGroup>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies> <!-- https://gemini.google.com/share/62f63a243809 -->
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebugType>full</DebugType>
   </PropertyGroup>

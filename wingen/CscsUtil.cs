@@ -100,11 +100,11 @@ class CscsUtil
         string projDir = Path.GetDirectoryName(projFileName)!;
         Directory.SetCurrentDirectory(projDir);
         string source = File.ReadAllText(projFileName);
-        string[] lines = OpenSystem.TextToLines(source).ToArray();
+        string[] lines = HyperOperatingSystem.TextToLines(source).ToArray();
         for (int i = 0; i < lines.Length; i++)
         {
             List<string>? m = null;
-            m = OpenSystem.FindFirstMatch(lines[i],
+            m = HyperOperatingSystem.FindFirstMatch(lines[i],
                 @"^//[+]#gui[ ]*;?[ ]*"
                 );
             if (m != null)
@@ -114,7 +114,7 @@ class CscsUtil
                     OutType = "WinExe";
                 }
             }
-            m = OpenSystem.FindFirstMatch(lines[i],
+            m = HyperOperatingSystem.FindFirstMatch(lines[i],
                 @"^//css_inc[ ]+([^ ;]+)[ ]*;?[ ]*",
                 @"^//[+]#inc[ ]+([^ ;]+)[ ]*;?[ ]*"
                 );
@@ -127,7 +127,7 @@ class CscsUtil
                 }
                 ParseProjectHelper(srcName);
             }
-            m = OpenSystem.FindFirstMatch(lines[i],
+            m = HyperOperatingSystem.FindFirstMatch(lines[i],
                 @"^//css_dir[ ]+([^ ;]+)[ ]*;?[ ]*",
                 @"^//[+]#dir[ ]+([^ ;]+)[ ]*;?[ ]*"
                 );
@@ -170,11 +170,11 @@ class CscsUtil
         string cwd = Directory.GetCurrentDirectory();
         Debug(cwd, "cwd");
         Directory.SetCurrentDirectory(Path.GetDirectoryName(srcPath)!);
-        string[] lines = OpenSystem.TextToLines(source).ToArray();
+        string[] lines = HyperOperatingSystem.TextToLines(source).ToArray();
         for (int i = 0; i < lines.Length; i++)
         {
             {
-                List<string>? m = OpenSystem.FindFirstMatch(lines[i],
+                List<string>? m = HyperOperatingSystem.FindFirstMatch(lines[i],
                     @"^//css_nuget[ ]+([^ ;]+)[ ]*;?[ ]*",
                     @"^//[+]#nuget[ ]+([^ ;]+)[ ]*;?[ ]*"
                     );
@@ -188,7 +188,7 @@ class CscsUtil
                 }
             }
             {
-                List<string>? m = OpenSystem.FindFirstMatch(lines[i],
+                List<string>? m = HyperOperatingSystem.FindFirstMatch(lines[i],
                     @"^//css_ref[ ]+([^ ;]+)[ ]*;?[ ]*",
                     @"^//[+]#ref[ ]+([^ ;]+)[ ]*;?[ ]*"
                     );
@@ -207,7 +207,7 @@ class CscsUtil
                 }
             }
             {
-                List<string>? m = OpenSystem.FindFirstMatch(lines[i],
+                List<string>? m = HyperOperatingSystem.FindFirstMatch(lines[i],
                     @"^//css_embed[ ]+([^ ;]+)[ ]*;?[ ]*",
                     @"^//[+]#embed[ ]+([^ ;]+)[ ]*;?[ ]*"
                     );
@@ -230,7 +230,7 @@ class CscsUtil
                 }
             }
             {
-                List<string>? m = OpenSystem.FindFirstMatch(lines[i],
+                List<string>? m = HyperOperatingSystem.FindFirstMatch(lines[i],
                     @"^//css_ico[ ]+([^ ;]+)[ ]*;?[ ]*",
                     @"^//[+]#ico[ ]+([^ ;]+)[ ]*;?[ ]*"
                     );
@@ -253,7 +253,7 @@ class CscsUtil
                 }
             }
             {
-                List<string>? m = OpenSystem.FindFirstMatch(lines[i],
+                List<string>? m = HyperOperatingSystem.FindFirstMatch(lines[i],
                     @"^//css_native[ ]+([^ ;]+)[ ]*;?[ ]*",
                     @"^//[+]#native[ ]+([^ ;]+)[ ]*;?[ ]*"
                     );
@@ -268,7 +268,7 @@ class CscsUtil
                 }
             }
             {
-                List<string>? m = OpenSystem.FindFirstMatch(lines[i],
+                List<string>? m = HyperOperatingSystem.FindFirstMatch(lines[i],
                     @"^//css_def[ ]+([^ ;]+)[ ]*;?[ ]*",
                     @"^//[+]#def[ ]+([^ ;]+)[ ]*;?[ ]*"
                     );

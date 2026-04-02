@@ -6,14 +6,13 @@ C:\home17\+sub\nuget.org\wingen\wingen\.build\wingen.main\bin\release\net462\Com
 C:\home17\+sub\nuget.org\wingen\wingen\.build\wingen.main\bin\release\net462\CoreObject.dll
 C:\home17\+sub\nuget.org\wingen\wingen\.build\wingen.main\bin\release\net462\CoreParser.dll
 C:\home17\+sub\nuget.org\wingen\wingen\.build\wingen.main\bin\release\net462\EasyObject.dll
+C:\home17\+sub\nuget.org\wingen\wingen\.build\wingen.main\bin\release\net462\HyperOperatingSystem.dll
 C:\home17\+sub\nuget.org\wingen\wingen\.build\wingen.main\bin\release\net462\Newtonsoft.Json.dll
 C:\home17\+sub\nuget.org\wingen\wingen\.build\wingen.main\bin\release\net462\nunit.framework.dll
 C:\home17\+sub\nuget.org\wingen\wingen\.build\wingen.main\bin\release\net462\nunit.framework.legacy.dll
-C:\home17\+sub\nuget.org\wingen\wingen\.build\wingen.main\bin\release\net462\OpenSystem.dll
 C:\home17\+sub\nuget.org\wingen\wingen\.build\wingen.main\bin\release\net462\PlainObjectConverter.dll
 C:\home17\+sub\nuget.org\wingen\wingen\.build\wingen.main\bin\release\net462\PlainObjectInterface.dll
 C:\home17\+sub\nuget.org\wingen\wingen\.build\wingen.main\bin\release\net462\Spectre.Console.dll
-C:\home17\+sub\nuget.org\wingen\wingen\.build\wingen.main\bin\release\net462\Spectre.Console.Json.dll
 C:\home17\+sub\nuget.org\wingen\wingen\.build\wingen.main\bin\release\net462\System.Buffers.dll
 C:\home17\+sub\nuget.org\wingen\wingen\.build\wingen.main\bin\release\net462\System.Collections.Immutable.dll
 C:\home17\+sub\nuget.org\wingen\wingen\.build\wingen.main\bin\release\net462\System.Memory.dll
@@ -23,7 +22,7 @@ C:\home17\+sub\nuget.org\wingen\wingen\.build\wingen.main\bin\release\net462\Sys
 C:\home17\+sub\nuget.org\wingen\wingen\.build\wingen.main\bin\release\net462\System.Text.Encoding.CodePages.dll
 C:\home17\+sub\nuget.org\wingen\wingen\.build\wingen.main\bin\release\net462\System.Threading.Tasks.Extensions.dll
 C:\home17\+sub\nuget.org\wingen\wingen\.build\wingen.main\bin\release\net462\System.ValueTuple.dll
-C:\home17\+sub\nuget.org\wingen\wingen\.build\wingen.main\bin\release\net462\UniversalEncoding.dll
+C:\home17\+sub\nuget.org\wingen\wingen\.build\wingen.main\bin\release\net462\Universal.dll
 C:\home17\+sub\nuget.org\wingen\wingen\.build\wingen.main\bin\release\net462\System.Runtime.InteropServices.RuntimeInformation.dll
 C:\home17\+sub\nuget.org\wingen\wingen\.build\wingen.main\bin\release\net462\Microsoft.Win32.Primitives.dll
 C:\home17\+sub\nuget.org\wingen\wingen\.build\wingen.main\bin\release\net462\netstandard.dll

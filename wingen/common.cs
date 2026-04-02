@@ -94,6 +94,9 @@ public static class Program
                                         <DebugType>full</DebugType>
                                         <TieredCompilationQuickJit>false</TieredCompilationQuickJit>
                                       </PropertyGroup>
+                                      <PropertyGroup>
+                                        <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies> <!-- https://gemini.google.com/share/62f63a243809 -->
+                                      </PropertyGroup>
                                       <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
                                         <DebugType>full</DebugType>
                                       </PropertyGroup>
@@ -314,7 +317,7 @@ public static class Program
                     $"\n    <RuntimeIdentifier>{Const._runtime}</RuntimeIdentifier>\n    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>";
         }
 
-        var home = OpenSystem.FindHome(new DirectoryInfo(projDir!));
+        var home = HyperOperatingSystem.FindHome(new DirectoryInfo(projDir!));
         Debug(home, "home");
         var asmSpec = "";
         foreach (var t in asmList)
@@ -337,7 +340,7 @@ public static class Program
             {
                 var targetPath = t.Replace("$(HOME)\\", "");
                 targetPath = Path.Combine(projDir!, ".p." + baseName + "+", targetPath);
-                OpenSystem.PrepareForFile(targetPath);
+                HyperOperatingSystem.PrepareForFile(targetPath);
                 File.Copy(srcFilePath, targetPath, true);
             }
         }
@@ -372,11 +375,11 @@ public static class Program
                 .Replace("{{USE_FORM}}", outType == "WinExe" ? "\n<UseWindowsForms>true</UseWindowsForms>" : "")
             ;
         Debug(content, "content");
-        OpenSystem.SaveAllText(Path.Combine(projDir!, ".p." + baseName + "+", baseName + ".csproj"), content);
-        OpenSystem.SaveAllText(Path.Combine(projDir!, ".p." + baseName + "+", baseName + ".sln"),
+        HyperOperatingSystem.SaveAllText(Path.Combine(projDir!, ".p." + baseName + "+", baseName + ".csproj"), content);
+        HyperOperatingSystem.SaveAllText(Path.Combine(projDir!, ".p." + baseName + "+", baseName + ".sln"),
             SlnTemplate.Replace("{{PROGRAM}}", baseName)
         );
-        OpenSystem.SaveAllText(Path.Combine(projDir!, ".p." + baseName + "+", "run"),
+        HyperOperatingSystem.SaveAllText(Path.Combine(projDir!, ".p." + baseName + "+", "run"),
             $"""
              #! /usr/bin/env bash.exe
              set -e
@@ -409,7 +412,7 @@ public static class Program
         var icoList = parser.IcoList;
         //if (!pkgList.Contains("System.Text.Encoding.CodePages")) pkgList.Add("System.Text.Encoding.CodePages");
         var projDir = Path.GetDirectoryName(projFileName);
-        var home = OpenSystem.FindHome(new DirectoryInfo(projDir!));
+        var home = HyperOperatingSystem.FindHome(new DirectoryInfo(projDir!));
         Debug(home, "home");
         var baseName = Path.GetFileNameWithoutExtension(projFileName);
         Directory.SetCurrentDirectory(projDir!);
@@ -458,7 +461,7 @@ public static class Program
                 fileBasedCode = fileBasedCode.Replace("\n", "\n");
             }
 
-            OpenSystem.SaveAllText($".s.{rootNs}", fileBasedCode);
+            HyperOperatingSystem.SaveAllText($".s.{rootNs}", fileBasedCode);
         }
 
         if (singleOnly) return;
@@ -534,8 +537,8 @@ public static class Program
                 .Replace("{{ICO_SPEC}}", icoSpec)
             ;
         //Echo(content, "content");
-        OpenSystem.SaveAllText(".build/" + baseName + "\\" + baseName + ".csproj", content);
-        OpenSystem.SaveAllText(".build/" + baseName + "\\" + baseName + ".sln",
+        HyperOperatingSystem.SaveAllText(".build/" + baseName + "\\" + baseName + ".csproj", content);
+        HyperOperatingSystem.SaveAllText(".build/" + baseName + "\\" + baseName + ".sln",
             SlnTemplate.Replace("{{PROGRAM}}", baseName)
         );
         var cleanStep = CleanShTemplate
@@ -559,7 +562,7 @@ public static class Program
                 .Replace("{{EXT}}", generateDllProject ? "dll" : "exe")
             ;
         var runFilePath = Path.GetFullPath(".r." + rootNs + ".sh");
-        OpenSystem.SaveAllText(runFilePath,
+        HyperOperatingSystem.SaveAllText(runFilePath,
             RunShTemplate
                 .Replace("{{GENERATOR}}", generator)
                 .Replace("{{PROGRAM}}", baseName)
@@ -573,7 +576,7 @@ public static class Program
         //string scriptFilePath = $"do.{rootNs}";
         //string scriptFilePath = $"{rootNs}.do";
         var scriptFilePath = $"{rootNs}.task";
-        OpenSystem.SaveAllText(scriptFilePath,
+        HyperOperatingSystem.SaveAllText(scriptFilePath,
                 $$$"""
                        #! /usr/bin/env bash.exe
                        # -*- mode: sh -*-
@@ -610,7 +613,7 @@ public static class Program
             )
             ;
         var cmdFilePath = $"do.{rootNs}.cmd";
-        OpenSystem.SaveAllText(cmdFilePath,
+        HyperOperatingSystem.SaveAllText(cmdFilePath,
                 $$$"""
                        @echo off
                        set script_dir=%~dp0

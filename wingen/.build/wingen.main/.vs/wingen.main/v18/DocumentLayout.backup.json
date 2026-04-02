@@ -16,20 +16,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CscsUtil.cs",
-              "DocumentMoniker": "C:\\home17\\\u002Bsub\\nuget.org\\wingen\\wingen\\CscsUtil.cs",
-              "RelativeDocumentMoniker": "..\\..\\CscsUtil.cs",
-              "ToolTip": "C:\\home17\\\u002Bsub\\nuget.org\\wingen\\wingen\\CscsUtil.cs",
-              "RelativeToolTip": "..\\..\\CscsUtil.cs",
-              "ViewState": "AgIAAN4AAAAAAAAAAAAmwO8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T12:03:16.568Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
@@ -39,9 +34,22 @@
               "RelativeDocumentMoniker": "..\\..\\common.cs",
               "ToolTip": "C:\\home17\\\u002Bsub\\nuget.org\\wingen\\wingen\\common.cs",
               "RelativeToolTip": "..\\..\\common.cs",
-              "ViewState": "AgIAADMBAAAAAAAAAAAWwDwBAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAADQBAAAAAAAAAAAAwDwBAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T11:59:00.226Z",
+              "WhenOpened": "2026-04-02T20:53:53.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CscsUtil.cs",
+              "DocumentMoniker": "C:\\home17\\\u002Bsub\\nuget.org\\wingen\\wingen\\CscsUtil.cs",
+              "RelativeDocumentMoniker": "..\\..\\CscsUtil.cs",
+              "ToolTip": "C:\\home17\\\u002Bsub\\nuget.org\\wingen\\wingen\\CscsUtil.cs",
+              "RelativeToolTip": "..\\..\\CscsUtil.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAAwG0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T12:03:16.568Z",
               "EditorCaption": ""
             }
           ]
