@@ -1,8 +1,8 @@
 //+#nuget System.Reflection.Metadata;
-//+#nuget CommandLineParser@2.9.1;
-//+#nuget EasyObject;
+//#+nuget CommandLineParser@2.9.1;
+//++nuget EasyObject;
 //+#inc   CscsUtil.cs
-//+#def   USE_CSCS_UTIL
+//##def   USE_CSCS_UTIL
 //+#def   XYZ
 //+#ico   app.ico
 

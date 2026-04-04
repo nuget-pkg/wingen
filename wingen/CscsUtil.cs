@@ -105,7 +105,7 @@ class CscsUtil
         {
             List<string>? m = null;
             m = HyperOperatingSystem.FindFirstMatch(lines[i],
-                @"^//[+]#gui[ ]*;?[ ]*"
+                @"^//[+#][+#]gui[ ]*;?[ ]*"
                 );
             if (m != null)
             {
@@ -116,7 +116,7 @@ class CscsUtil
             }
             m = HyperOperatingSystem.FindFirstMatch(lines[i],
                 @"^//css_inc[ ]+([^ ;]+)[ ]*;?[ ]*",
-                @"^//[+]#inc[ ]+([^ ;]+)[ ]*;?[ ]*"
+                @"^//[+#][+#]inc[ ]+([^ ;]+)[ ]*;?[ ]*"
                 );
             if (m != null)
             {
@@ -129,7 +129,7 @@ class CscsUtil
             }
             m = HyperOperatingSystem.FindFirstMatch(lines[i],
                 @"^//css_dir[ ]+([^ ;]+)[ ]*;?[ ]*",
-                @"^//[+]#dir[ ]+([^ ;]+)[ ]*;?[ ]*"
+                @"^//[+#][+#]dir[ ]+([^ ;]+)[ ]*;?[ ]*"
                 );
             if (m != null)
             {
@@ -176,7 +176,7 @@ class CscsUtil
             {
                 List<string>? m = HyperOperatingSystem.FindFirstMatch(lines[i],
                     @"^//css_nuget[ ]+([^ ;]+)[ ]*;?[ ]*",
-                    @"^//[+]#nuget[ ]+([^ ;]+)[ ]*;?[ ]*"
+                    @"^//[+#][+#]nuget[ ]+([^ ;]+)[ ]*;?[ ]*"
                     );
                 if (m != null)
                 {
@@ -190,7 +190,7 @@ class CscsUtil
             {
                 List<string>? m = HyperOperatingSystem.FindFirstMatch(lines[i],
                     @"^//css_ref[ ]+([^ ;]+)[ ]*;?[ ]*",
-                    @"^//[+]#ref[ ]+([^ ;]+)[ ]*;?[ ]*"
+                    @"^//[+#][+#]ref[ ]+([^ ;]+)[ ]*;?[ ]*"
                     );
                 if (m != null)
                 {
@@ -209,7 +209,7 @@ class CscsUtil
             {
                 List<string>? m = HyperOperatingSystem.FindFirstMatch(lines[i],
                     @"^//css_embed[ ]+([^ ;]+)[ ]*;?[ ]*",
-                    @"^//[+]#embed[ ]+([^ ;]+)[ ]*;?[ ]*"
+                    @"^//[+#][+#]embed[ ]+([^ ;]+)[ ]*;?[ ]*"
                     );
                 if (m != null)
                 {
@@ -232,7 +232,7 @@ class CscsUtil
             {
                 List<string>? m = HyperOperatingSystem.FindFirstMatch(lines[i],
                     @"^//css_ico[ ]+([^ ;]+)[ ]*;?[ ]*",
-                    @"^//[+]#ico[ ]+([^ ;]+)[ ]*;?[ ]*"
+                    @"^//[+#][+#]ico[ ]+([^ ;]+)[ ]*;?[ ]*"
                     );
                 if (m != null)
                 {
@@ -255,7 +255,7 @@ class CscsUtil
             {
                 List<string>? m = HyperOperatingSystem.FindFirstMatch(lines[i],
                     @"^//css_native[ ]+([^ ;]+)[ ]*;?[ ]*",
-                    @"^//[+]#native[ ]+([^ ;]+)[ ]*;?[ ]*"
+                    @"^//[+#][+#]native[ ]+([^ ;]+)[ ]*;?[ ]*"
                     );
                 if (m != null)
                 {
@@ -270,7 +270,7 @@ class CscsUtil
             {
                 List<string>? m = HyperOperatingSystem.FindFirstMatch(lines[i],
                     @"^//css_def[ ]+([^ ;]+)[ ]*;?[ ]*",
-                    @"^//[+]#def[ ]+([^ ;]+)[ ]*;?[ ]*"
+                    @"^//[+#][+#]def[ ]+([^ ;]+)[ ]*;?[ ]*"
                     );
                 if (m != null)
                 {

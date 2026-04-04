@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("wingen")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("0.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.0.0.0+62a6b0127e0f41a46f614aa052d2be07df9c297d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.0.0.0+5093eaec433d1053990a8e8cf5e3d76991d1f314")]
 [assembly: System.Reflection.AssemblyProductAttribute("wingen")]
 [assembly: System.Reflection.AssemblyTitleAttribute("wingen")]
 [assembly: System.Reflection.AssemblyVersionAttribute("0.0.0.0")]
